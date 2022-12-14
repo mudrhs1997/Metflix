@@ -7,12 +7,11 @@
 
 import UIKit
 
-class MainHeaderView: UIView {
+class MainHeaderUIView: UIView {
 
     private let headerImage: UIImageView = {
         var image = UIImageView()
         image.image = UIImage(named: "image")
-        image.translatesAutoresizingMaskIntoConstraints = false
         image.clipsToBounds = true
         image.contentMode = .scaleAspectFill
         return image
@@ -25,23 +24,21 @@ class MainHeaderView: UIView {
         return button
     }()
     
-    private func setConstraint() {
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
         addSubview(headerImage)
         addSubview(playButton)
-        
-        
         headerImage.frame = bounds
+        headerImage.gradient()
         
-        playButton.snp.makeConstraints { btn in
-            btn.left.equalTo(headerImage.snp.left).offset(10)
-            btn.bottom.equalTo(headerImage.snp.bottom).offset(-10)
-        }
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        setConstraint()
+
     }
     
     required init?(coder: NSCoder) {

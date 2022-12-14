@@ -8,34 +8,45 @@
 import UIKit
 import SnapKit
 
-class MainViewController: UIViewController {
+class HomeViewController: UIViewController {
     
+    private let safeArea: UIView = {
+        var area = UIView()
+        return area
+    }()
     
     private let listTableView : UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(ContentsListTableViewCell.self, forCellReuseIdentifier: "ContentsListTableViewCell")
+        tableView.register(ContentsTableViewCell.self, forCellReuseIdentifier: "ContentsTableViewCell")
         return tableView
     }()
     
-    private let safeArea: UIView = {
-        var area = UIView()
-        area.backgroundColor = .link
-        return area
-    }()
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
         
         listTableView.dataSource = self
         listTableView.delegate = self
         
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "netflix-logo"), style: .done, target: nil, action: nil)
+        navigationItem.rightBarButtonItems = [UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: nil, action: nil), UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: nil, action: nil)]
         
         
-//        setSafeArea()
         
-        setConstraint()
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        
+        
+        self.view.addSubview(listTableView)
+        listTableView.frame = view.bounds
+        let headerView = MainHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 400))
+        listTableView.tableHeaderView = headerView
         
     }
     
@@ -58,33 +69,22 @@ class MainViewController: UIViewController {
         }
     }
     
-    private func setConstraint() {
-
-        
-//        self.view.addSubview(mainHeaderView)
-//        mainHeaderView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 200)
-        self.view.addSubview(listTableView)
-        
-//        mainHeaderView.snp.makeConstraints { view in
-//            view.top.equalToSuperview()
-//            view.left.right.equalToSuperview()
-//        }
-        
-        listTableView.frame = view.bounds
-        let headerView = MainHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 200))
-        listTableView.tableHeaderView = headerView
-    }
+    
     
 
 }
 
-extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.rowHeight
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContentsListTableViewCell", for: indexPath) as? ContentsListTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContentsTableViewCell", for: indexPath) as? ContentsTableViewCell else { return UITableViewCell() }
         return cell
     }
     

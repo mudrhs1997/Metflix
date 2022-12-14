@@ -17,8 +17,8 @@ class MainTabBarController: UITabBarController {
     }
     
     private func setController() {
-        let home = MainViewController()
-        home.title = "List"
+        let home = HomeViewController()
+        home.title = "New & Hot"
         let recommend = RecommendViewController()
         recommend.title = "New & Hot"
         let stored = StoredViewController()

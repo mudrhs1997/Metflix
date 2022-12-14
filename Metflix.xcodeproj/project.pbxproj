@@ -8,33 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		298AD3EBAAE6AAEB964C81CF /* Pods_Metflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D7972288360647ABC76A44 /* Pods_Metflix.framework */; };
-		C1581F6428F50E3900859042 /* ContentsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1581F6328F50E3900859042 /* ContentsListTableViewCell.swift */; };
+		C1581F6428F50E3900859042 /* ContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1581F6328F50E3900859042 /* ContentsTableViewCell.swift */; };
+		C16D7A1A28FAD707001D9607 /* ContentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16D7A1928FAD707001D9607 /* ContentsCollectionViewCell.swift */; };
 		C1784C6E28ED6208005E2B11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1784C6D28ED6208005E2B11 /* AppDelegate.swift */; };
 		C1784C7028ED6208005E2B11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1784C6F28ED6208005E2B11 /* SceneDelegate.swift */; };
-		C1784C7228ED6208005E2B11 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1784C7128ED6208005E2B11 /* MainViewController.swift */; };
+		C1784C7228ED6208005E2B11 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1784C7128ED6208005E2B11 /* HomeViewController.swift */; };
 		C1784C7728ED620A005E2B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1784C7628ED620A005E2B11 /* Assets.xcassets */; };
 		C1784C7A28ED620A005E2B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1784C7828ED620A005E2B11 /* LaunchScreen.storyboard */; };
 		C1BA330E28F5398A0095B580 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BA330D28F5398A0095B580 /* MainTabBarController.swift */; };
 		C1BA331028F53B450095B580 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BA330F28F53B450095B580 /* RecommendViewController.swift */; };
 		C1BA331228F53C910095B580 /* StoredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BA331128F53C910095B580 /* StoredViewController.swift */; };
-		C1BA331428F53D000095B580 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BA331328F53D000095B580 /* MainHeaderView.swift */; };
+		C1BA331428F53D000095B580 /* MainHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BA331328F53D000095B580 /* MainHeaderUIView.swift */; };
+		C1BA331928F8057F0095B580 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BA331828F8057E0095B580 /* Gradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4265DC28B704E4C94A563F0D /* Pods-Metflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metflix.release.xcconfig"; path = "Target Support Files/Pods-Metflix/Pods-Metflix.release.xcconfig"; sourceTree = "<group>"; };
 		86A14956706A7CE5E9EF2954 /* Pods-Metflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metflix.debug.xcconfig"; path = "Target Support Files/Pods-Metflix/Pods-Metflix.debug.xcconfig"; sourceTree = "<group>"; };
-		C1581F6328F50E3900859042 /* ContentsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsListTableViewCell.swift; sourceTree = "<group>"; };
+		C1581F6328F50E3900859042 /* ContentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsTableViewCell.swift; sourceTree = "<group>"; };
+		C16D7A1928FAD707001D9607 /* ContentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsCollectionViewCell.swift; sourceTree = "<group>"; };
 		C1784C6A28ED6208005E2B11 /* Metflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1784C6D28ED6208005E2B11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1784C6F28ED6208005E2B11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C1784C7128ED6208005E2B11 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C1784C7128ED6208005E2B11 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C1784C7628ED620A005E2B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1784C7928ED620A005E2B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1784C7B28ED620A005E2B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1BA330D28F5398A0095B580 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C1BA330F28F53B450095B580 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		C1BA331128F53C910095B580 /* StoredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredViewController.swift; sourceTree = "<group>"; };
-		C1BA331328F53D000095B580 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
+		C1BA331328F53D000095B580 /* MainHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderUIView.swift; sourceTree = "<group>"; };
+		C1BA331828F8057E0095B580 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		F8D7972288360647ABC76A44 /* Pods_Metflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,6 +54,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C16D7A1B28FE43A0001D9607 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C16D7A1928FAD707001D9607 /* ContentsCollectionViewCell.swift */,
+				C1581F6328F50E3900859042 /* ContentsTableViewCell.swift */,
+				C1BA331328F53D000095B580 /* MainHeaderUIView.swift */,
+				C1784C7128ED6208005E2B11 /* HomeViewController.swift */,
+				C1BA330D28F5398A0095B580 /* MainTabBarController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		C1784C6128ED6208005E2B11 = {
 			isa = PBXGroup;
 			children = (
@@ -71,19 +87,41 @@
 		C1784C6C28ED6208005E2B11 /* Metflix */ = {
 			isa = PBXGroup;
 			children = (
+				C1BA331728F7782E0095B580 /* View */,
+				C1BA331628F777FC0095B580 /* ViewModel */,
+				C1BA331528F777F30095B580 /* Model */,
 				C1784C6D28ED6208005E2B11 /* AppDelegate.swift */,
 				C1784C6F28ED6208005E2B11 /* SceneDelegate.swift */,
-				C1784C7128ED6208005E2B11 /* MainViewController.swift */,
 				C1784C7628ED620A005E2B11 /* Assets.xcassets */,
 				C1784C7828ED620A005E2B11 /* LaunchScreen.storyboard */,
 				C1784C7B28ED620A005E2B11 /* Info.plist */,
-				C1581F6328F50E3900859042 /* ContentsListTableViewCell.swift */,
-				C1BA330D28F5398A0095B580 /* MainTabBarController.swift */,
-				C1BA330F28F53B450095B580 /* RecommendViewController.swift */,
-				C1BA331128F53C910095B580 /* StoredViewController.swift */,
-				C1BA331328F53D000095B580 /* MainHeaderView.swift */,
+				C1BA331828F8057E0095B580 /* Gradient.swift */,
 			);
 			path = Metflix;
+			sourceTree = "<group>";
+		};
+		C1BA331528F777F30095B580 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1BA331628F777FC0095B580 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1BA331728F7782E0095B580 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C16D7A1B28FE43A0001D9607 /* Home */,
+				C1BA330F28F53B450095B580 /* RecommendViewController.swift */,
+				C1BA331128F53C910095B580 /* StoredViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D5228FEF78F07F5B00977827 /* Frameworks */ = {
@@ -217,14 +255,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1BA331428F53D000095B580 /* MainHeaderView.swift in Sources */,
+				C1BA331428F53D000095B580 /* MainHeaderUIView.swift in Sources */,
 				C1BA331228F53C910095B580 /* StoredViewController.swift in Sources */,
-				C1784C7228ED6208005E2B11 /* MainViewController.swift in Sources */,
+				C16D7A1A28FAD707001D9607 /* ContentsCollectionViewCell.swift in Sources */,
+				C1784C7228ED6208005E2B11 /* HomeViewController.swift in Sources */,
 				C1BA331028F53B450095B580 /* RecommendViewController.swift in Sources */,
 				C1784C6E28ED6208005E2B11 /* AppDelegate.swift in Sources */,
 				C1BA330E28F5398A0095B580 /* MainTabBarController.swift in Sources */,
 				C1784C7028ED6208005E2B11 /* SceneDelegate.swift in Sources */,
-				C1581F6428F50E3900859042 /* ContentsListTableViewCell.swift in Sources */,
+				C1581F6428F50E3900859042 /* ContentsTableViewCell.swift in Sources */,
+				C1BA331928F8057F0095B580 /* Gradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
